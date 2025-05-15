@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizly</title>
+    <link rel="stylesheet" href="./src/fonts.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="test-card">
+        <div class="test-card__question-nav" id="questions-nav"></div>
+        <div class="test-card__container">
+          <div class="test-card__box">
+            <div class="test-card__tags">
+              <div
+                class="test-card__question jost"
+                id="current-question-number"
+              >
+                Вопрос №1
+              </div>
+              <div class="test-card__title" id="test-card__title">
+                <h2 class="jost"></h2>
+              </div>
+            </div>
+            <div class="test-card__description jost" id="question-text"></div>
+            <div class="test-card__subtitle jost">Варианты ответов</div>
+            <div class="test-card__options" id="options-container"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__item buttons__left inter">Назад</button>
+          <button class="buttons__item buttons__right inter">Далее</button>
+        </div>
+      </section>
+      <section class="form-answer">
+        <div class="form-answer__container">
+          <div class="form-answer__result inter">0</div>
+          <div class="form-answer__title">
+            <h2 class="jost"></h2>
+          </div>
+          <div class="form-answer__description">
+            <p class="inter">
+              Спасибо за участие в тестировании! <br />
+              Ваши ответы очень важны для нас. Мы улучшим наш продукт.
+            </p>
+          </div>
+          <div class="form-answer__feedback">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__item buttons__left inter">
+            Пройти заново
+          </button>
+          <button class="buttons__item buttons__right inter">Домой</button>
+        </div>
+      </div>
+      </section>
+      <section class="review">
+        <div class="test-card__container">
+          <div>
+            <div class="test-card__options" id="review-container"></div>
+          </div>
+        </div>
+      </section>
+      <div class="inter" id="notification">Пожалуйста, выберите ответ!</div>
+    </main>
+
+    <script src="./src/jquery-3.7.1.min.js"></script>
+    <script src="./src/slick.min.js"></script>
+    <script type="text/javascript">
+      $(".test-card__question-nav").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+    </script>
+  </body>
+</html>

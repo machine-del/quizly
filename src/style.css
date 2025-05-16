@@ -158,11 +158,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   background-color: #3d93ff;
-<<<<<<< HEAD
   background-image: url("../public/images/checked.png");
-=======
-  background-image: url("./public/images/checked.png");
->>>>>>> dbb320c6bb28d0850d7f24a8751d1c2840e401fd
   background-position: center;
   background-size: 15px 12px;
   background-repeat: no-repeat;
